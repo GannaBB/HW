@@ -1,0 +1,13 @@
+school = ' oU vapcaRov'
+print(school.title())
+print(school.upper())
+print(school.lower())
+print(school.replace('o','a'))
+print(school.find('ap'))
+print(school.strip())
+print(school.lstrip())
+print(school.rstrip())
+print(school.split(' '))
+print(school.startswith('vap'))
+print(school.startswith(' '))
+print(school.endswith('v'))
