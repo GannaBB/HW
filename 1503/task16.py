@@ -9,7 +9,9 @@ try:
 except:
     print('Invalid input')
 
+old_str = text
 
+# option 1
 for l in text:
     
     num = text.count(l)
@@ -24,5 +26,11 @@ for l in text:
 print('Cleaned text:', text)
 
 
-    
 
+# option 2
+new_str = ''
+for i in old_str:
+    if i not in new_str:
+        new_str = new_str + i
+
+print('Cleaned text:', new_str)
