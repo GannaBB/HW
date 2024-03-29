@@ -1,9 +1,9 @@
-x =0
+x = 570
 
 A=x//100
 B=x%100//10
 C=x%10
-
+print(A, ' ', B, ' ', C)
 
 if A!=0:
     
@@ -59,8 +59,8 @@ if B!=0:
         elif C==9: second_word='nineteen'
 else: second_word=''
        
-if B!=1:
-    if C==0: third_word='zero'
+if B!=1 or (A==0 and B==0):
+    if C==0: third_word=''
     if C==1: third_word='one'
     if C==2: third_word='two'
     if C==3: third_word='three'
@@ -70,6 +70,14 @@ if B!=1:
     if C==7: third_word='seven'
     if x==8: third_word='eigth'
     if x==9: third_word='nine'
+
+if A==0 and B==0 and C==0:
+    third_word='zero'
+if B==1:
+    third_word = ''
+
+
+
     
 
 if A!=0:
@@ -80,7 +88,6 @@ if A!=0:
     
 else: 
     print(first_word, second_word, third_word)
-
 
 
 
