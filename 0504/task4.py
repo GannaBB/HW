@@ -4,18 +4,37 @@
 # Изход: Factorial of 5 is 120
 
 
+# def factorial(x):
+#     m = 1
+#     i = 1
+#     for i in range(1,x+1):
+#         m = m* i
+    
+#     return(m)
+
+
+# try:
+#     n = int(input('Enter the number: '))
+# except:
+#     print('Must be an integer')
+    
+# print(f"Factorial of {n} is {factorial(n)}")
+
+
+
 def factorial(x):
-    m = 1
-    i = 1
-    for i in range(1,x+1):
-        m = m* i
+    if x == 1:
+        return 1
+    else: 
+        return x * factorial(x-1)
     
-    return(m)
 
 
-try:
-    n = int(input('Enter the number: '))
-except:
-    print('Must be an integer')
+# try:
+#     n = int(input('Enter the number: '))
+# except:
+#     print('Must be an integer')
     
-print(f"Factorial of {n} is {factorial(n)}")
+# print(f"Factorial of {n} is {factorial(n)}")
+
+print(factorial(5))
